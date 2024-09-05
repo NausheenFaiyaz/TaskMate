@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="screen-backdrop"></div>
+      <div class="screen home-screen">
+        <div class="head-wrapper">
+          <div class="menu-btn">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="welcome">
+            <div class="content">
+              <h1>Hello TaskMate</h1>
+              <p>Today you have <span class="totalTasks"></span> tasks</p>
+            </div>
+            <div class="img">
+              <div class="backdrop"></div>
+              <img src="personal.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="categories-wrapper">
+          <div class="categories">
+            <div class="category">
+              <div class="left">
+                <img src="" alt="" />
+                <div class="content">
+                  <h1>Personal</h1>
+                  <p>5 Tasks</p>
+                </div>
+              </div>
+              <div class="options">
+                <div class="toggle-btn">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen category-screen">
+        <div class="head-wrapper">
+          <div class="back-btn">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </div>
+        </div>
+        <div class="category-details">
+          <img src="personal.png" alt="" id="category-img" />
+          <div class="details">
+            <p class="category-tasks">8 tasks</p>
+            <h1 class="category-title">Personal</h1>
+          </div>
+        </div>
+        <div class="tasks-wrapper">
+          <div class="tasks">
+            <div class="task-wrapper">
+              <label for="task" class="task">
+                <input type="checkbox" id="task" />
+                <span class="checkmark">
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                <p>Buy a new car</p>
+              </label>
+              <div class="delete">
+                <i class="fa-solid fa-trash-can"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="add-task-btn">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+      <div class="black-backdrop"></div>
+      <div class="add-task">
+        <div class="add-task-backdrop"></div>
+        <div class="input-group">
+          <label for="task-input">Task</label>
+          <input type="text" id="task-input" required />
+        </div>
+        <div class="input-group">
+          <label for="category-select">Category</label>
+          <select name="" id="category-select"></select>
+        </div>
+        <div class="btns">
+          <button class="cancel-btn">Cancel</button>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
